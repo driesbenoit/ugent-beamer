@@ -1,8 +1,8 @@
 # Version v0.1
 The aim of this UGent Beamer theme:
-    - A theme that closely resembles the official UGent Powerpoint/Keynote presentation themes.
-    - Similar theme options as the depreciated UGent Beamer theme.
-    - Ease-of-use for the average Beamer user.
+* A theme that closely resembles the official UGent Powerpoint/Keynote presentation themes.
+* Similar theme options as the depreciated UGent Beamer theme.
+* Ease-of-use for the average Beamer user.
 
 Requires the packages [sfmath](https://ctan.org/pkg/sfmath),
 [helvet](https://ctan.org/pkg/helvet) and [PGF/TikZ](https://ctan.org/pkg/pgf)
