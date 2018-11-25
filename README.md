@@ -10,7 +10,7 @@ to be installed in your LaTeX distribution.
 
 Demo
 ----
-A full example is available. Refer to `example/example.tex` and `example/example.pdf`.
+A full example is available. Refer to `example/example.tex` and `example/example.pdf`. Or click [here](https://github.com/driesbenoit/ugent-beamer/blob/master/example/example.pdf).
 
 ![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-example-02.png)
 ![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-example-03.png)
