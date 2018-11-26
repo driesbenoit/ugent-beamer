@@ -1,7 +1,8 @@
 # Version v0.1
 The aim of this UGent Beamer theme:
 * A theme that closely resembles the official UGent Powerpoint/Keynote presentation themes.
-* Similar theme options as the depreciated UGent Beamer theme.
+* Similar theme options as the [depreciated UGent Beamer theme](https://github.com/pbelmans/ugent-beamer) by Pieter Belmans.
+* A corporate version, as well as faculty specific versions.
 * Ease-of-use for the average Beamer user.
 
 Requires the packages [sfmath](https://ctan.org/pkg/sfmath),
@@ -10,7 +11,9 @@ to be installed in your LaTeX distribution.
 
 Demo
 ----
-A full example is available. Refer to `example/example.tex` and `example/example.pdf`. Or click [here](https://github.com/driesbenoit/ugent-beamer/blob/master/example/example.pdf).
+A full example is available. Refer to `example/example.tex` and `example/example.pdf` or click [here](https://github.com/driesbenoit/ugent-beamer/blob/master/example/example.pdf).
+
+Some example slides:
 
 ![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-example-02.png)
 ![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-example-03.png)
@@ -42,8 +45,8 @@ Then include the theme by writing:
 ```
 in the preamble of your document.
 
-Installation
-------------
+Full installation
+-----------------
 In case you're using your favorite flavor of Unix (and/or TeX Live) you need to have a local directory (this will probably be ~/texmf/) and you need to place all the files from the theme folder in the directory ~/texmf/tex/latex/beamer/themes/ugent/, finishing it by running texhash.
 
 If on the other hand you're on Windows (probably MiK\TeX) the walkthrough at [this url](http://docs.miktex.org/manual/localadditions.html) explains thoroughly and with many pictures how to create a local installation. Don't forget to Refresh FNDB as explained [here](http://docs.miktex.org/manual/configuring.html#fndbupdate).
