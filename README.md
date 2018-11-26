@@ -11,7 +11,7 @@ to be installed in your LaTeX distribution.
 
 Demo
 ----
-A full example is available. Refer to `example/example.tex` and `example/example.pdf` or click [here](https://github.com/driesbenoit/ugent-beamer/blob/master/example/example.pdf).
+An extended example is available. See `example/example.tex` and `example/example.pdf` or click [here](https://github.com/driesbenoit/ugent-beamer/blob/master/example/example.pdf).
 
 Some example slides:
 
@@ -45,18 +45,55 @@ Then include the theme by writing:
 ```
 in the preamble of your document.
 
-Full installation
------------------
+Global installation
+-------------------
 In case you're using your favorite flavor of Unix (and/or TeX Live) you need to have a local directory (this will probably be ~/texmf/) and you need to place all the files from the theme folder in the directory ~/texmf/tex/latex/beamer/themes/ugent/, finishing it by running texhash.
 
 If on the other hand you're on Windows (probably MiK\TeX) the walkthrough at [this url](http://docs.miktex.org/manual/localadditions.html) explains thoroughly and with many pictures how to create a local installation. Don't forget to Refresh FNDB as explained [here](http://docs.miktex.org/manual/configuring.html#fndbupdate).
+
+Usage
+=====
+Refer to the extended example (`example/example.tex`) for an overview of the possibilities of the theme.
+
+Theme options
+-------------
+The theme options can be set as follows:
+`\usetheme[optionshere]{ugent}`
+
+* `language=x`, where x is the language
+  * `nl`: dutch (default)
+  * `en`: english
+* `faculty=x`, where x is the abbreviation of the faculty
+  * `lw`: Faculty of Literature & Philosophy
+  * `re`: Faculty of Law
+  * `we`: Faculty of Science
+  * `ge`: Faculty of Medicine and Health Sciences
+  * `ea`: Faculty of Engineering and Architecture
+  * `eb`: Faculty of Economics and Business Administration
+  * `di`: Faculty of Veterinary Medicine
+  * `pp`: Faculty of Psychology and Educational Sciences
+  * `bw`: Faculty of Bioscience Engineering
+  * `fw`: Faculty of Pharmaceutical Sciences
+  * `ps`: Faculty of Political and Social Sciences
+* `usecolors`
+  * This option sets the secondary color equal to the faculty color
+  * Always use in combination with `faculty=x`
+* `noframenumber`
+  * This option suppresses the frame numbers
+  
+Frame macros
+------------
+Some frames can be automatically generated:
+* `\logoframe`: a white frame with large UGent logo
+* `\titleframe`: the title frame
+* `\sectionframe`: frame that shows the current section
 
 License
 =======
 This software is released under the [GNU GPL v3.0 License](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
-Contacts
-========
-If you are enjoying this theme please share it with your friends or colleagues!
+Contact
+=======
+If you are enjoying this theme please share it with your colleagues or friends!
 
 Any suggestions, comments, criticism or appreciation are welcome!
