@@ -1,4 +1,4 @@
-# Version v0.1
+# Version v0.1-1
 The aim of this UGent Beamer theme:
 * A theme that closely resembles the official UGent Powerpoint/Keynote presentation themes.
 * Similar theme options as the [depreciated UGent Beamer theme](https://github.com/pbelmans/ugent-beamer) by Pieter Belmans.
@@ -49,7 +49,7 @@ Global installation
 -------------------
 In case you're using your favorite flavor of Unix (and/or TeX Live) you need to have a local directory (this will probably be ~/texmf/) and you need to place all the files from the theme folder in the directory ~/texmf/tex/latex/beamer/themes/ugent/, finishing it by running texhash.
 
-If on the other hand you're on Windows (probably MiK\TeX) the walkthrough at [this url](http://docs.miktex.org/manual/localadditions.html) explains thoroughly and with many pictures how to create a local installation. Don't forget to Refresh FNDB as explained [here](http://docs.miktex.org/manual/configuring.html#fndbupdate).
+If on the other hand you're on Windows (probably MiK\TeX) the walkthrough at [this url](http://docs.miktex.org/manual/localadditions.html) explains in detail how to create a local installation. Don't forget to Refresh FNDB as explained [here](http://docs.miktex.org/manual/configuring.html#fndbupdate).
 
 Usage
 =====
@@ -83,7 +83,7 @@ The theme options can be set as follows:
   
 Frame macros
 ------------
-Some frames can be automatically generated:
+Some frames can be generated automatically:
 * `\logoframe`: a white frame with large UGent logo
 * `\titleframe`: the title frame
 * `\sectionframe`: frame that shows the current section
