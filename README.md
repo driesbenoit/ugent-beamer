@@ -15,13 +15,13 @@ An extended example is available. See `example/example.tex` and `example/example
 
 Some example slides:
 
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-example-02.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-example-03.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-example-04.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-example-05.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-example-11.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-example-17.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-example-20.png)
+![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-0.png)
+![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-1.png)
+![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-2.png)
+![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-3.png)
+![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-4.png)
+![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-5.png)
+![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-6.png)
 
 Download
 ========
