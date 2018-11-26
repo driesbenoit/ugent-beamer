@@ -142,6 +142,19 @@
 % Define item symbol
 \setbeamertemplate{items}[square]
 
+% Fix bug in older TeX versions (e.g. 2015)
+% Without this the 'Redefine block environment' code below gives errors
+\makeatletter
+\long\def\beamer@newenvnoopt#1#2#3#4{%
+  \expandafter\renewcommand\expandafter<\expandafter>\csname#1\endcsname[#2]{#3}%<- here
+  \expandafter\long\expandafter\def\csname end#1\endcsname{#4}%
+}
+\long\def\beamer@newenvopt#1#2[#3]#4#5{%
+  \expandafter\renewcommand\expandafter<\expandafter>\csname#1\endcsname[#2][#3]{#4}%<- here
+  \expandafter\long\expandafter\def\csname end#1\endcsname{#5}%
+}
+\makeatother
+
 % Redefine block environment
 \renewenvironment<>{block}[2][.975\textwidth]{
      \begin{center}
