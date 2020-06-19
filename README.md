@@ -11,17 +11,16 @@ to be installed in your LaTeX distribution.
 
 Demo
 ----
-An extended example is available. See `example/example.tex` and `example/example.pdf` or click [here](https://github.com/driesbenoit/ugent-beamer/blob/master/example/example.pdf).
-
 Some example slides:
 
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-0.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-1.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-2.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-3.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-4.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-5.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-6.png)
+![](media/screenshots/screenshot-0.png)
+![](media/screenshots/screenshot-1.png)
+![](media/screenshots/screenshot-2.png)
+![](media/screenshots/screenshot-3.png)
+![](media/screenshots/screenshot-4.png)
+![](media/screenshots/screenshot-5.png)
+![](media/screenshots/screenshot-6.png)
+
 
 Download
 ========
@@ -31,29 +30,20 @@ Installation
 ============
 The theme is an addendum for the LaTeX beamer class, hence it is assumed that you have a running LaTeX installation together with the beamer package and its dependencies.
 
-Once you have the files, all that is required for the theme to work is putting the files into a directory where LaTeX can find them. This boils down to mimicking the so called TDS (or TeX Directory Structure).
-
 Ad-hoc installation 
 -------------------
-After downloading, copy the files named beamer*ugent.sty, together with all *.png files from the image folder, into the same folder as your LaTeX source file.
-
-Then include the theme by writing:
-```latex
-\documentclass{beamer}
-
-\usetheme{ugent}
-```
-in the preamble of your document.
+After downloading, you can immediately start working by editing the provided presentation.tex template.
 
 Global installation
 -------------------
+Once you have the files, all that is required for the theme to work is putting the files into a directory where LaTeX can find them. This boils down to mimicking the so called TDS (or TeX Directory Structure).
+
 In case you're using your favorite flavor of Unix (and/or TeX Live) you need to have a local directory (this will probably be ~/texmf/) and you need to place all the files from the theme folder in the directory ~/texmf/tex/latex/beamer/themes/ugent/, finishing it by running texhash.
 
 If on the other hand you're on Windows (probably MiK\TeX) the walkthrough at [this url](http://docs.miktex.org/manual/localadditions.html) explains in detail how to create a local installation. Don't forget to Refresh FNDB as explained [here](http://docs.miktex.org/manual/configuring.html#fndbupdate).
 
 Usage
 =====
-Refer to the extended example (`example/example.tex`) for an overview of the possibilities of the theme.
 
 Theme options
 -------------
