@@ -1,52 +1,21 @@
 # Version v0.1-1
+
 The aim of this UGent Beamer theme:
 * A theme that closely resembles the official UGent Powerpoint/Keynote presentation themes.
 * Similar theme options as the [depreciated UGent Beamer theme](https://github.com/pbelmans/ugent-beamer) by Pieter Belmans.
 * A corporate version, as well as faculty specific versions.
 * Ease-of-use for the average Beamer user.
 
-Requires the packages [sfmath](https://ctan.org/pkg/sfmath),
-[helvet](https://ctan.org/pkg/helvet) and [PGF/TikZ](https://ctan.org/pkg/pgf)
-to be installed in your LaTeX distribution.
+Requires the packages [sfmath](https://ctan.org/pkg/sfmath),[helvet](https://ctan.org/pkg/helvet), [PGF/TikZ](https://ctan.org/pkg/pgf) and [beamer](https://ctan.org/pkg/beamer) to be installed in your LaTeX distribution.
 
-Demo
-----
-Some example slides:
+## Usage
 
-![](media/screenshots/screenshot-0.png)
-![](media/screenshots/screenshot-1.png)
-![](media/screenshots/screenshot-2.png)
-![](media/screenshots/screenshot-3.png)
-![](media/screenshots/screenshot-4.png)
-![](media/screenshots/screenshot-5.png)
-![](media/screenshots/screenshot-6.png)
+After downloading this repository, you can immediately start working by editing the provided presentation.tex template.
 
+You can also install the style globally. Once you have the files, all that is required for the theme to work is putting the files into a directory where LaTeX can find them. This boils down to mimicking the so called TDS (or TeX Directory Structure). In case you're using your favorite flavor of Unix (and/or TeX Live) you need to have a local directory (this will probably be ~/texmf/) and you need to place all the files from the theme folder in the directory ~/texmf/tex/latex/beamer/themes/ugent/, finishing it by running texhash. If on the other hand you're on Windows (probably MiK\TeX) the walkthrough at [this url](http://docs.miktex.org/manual/localadditions.html) explains in detail how to create a local installation. Don't forget to Refresh FNDB as explained [here](http://docs.miktex.org/manual/configuring.html#fndbupdate).
 
-Download
-========
-Download the latest release by following [this](https://github.com/driesbenoit/ugent-beamer/releases) link.
+### Theme options
 
-Installation
-============
-The theme is an addendum for the LaTeX beamer class, hence it is assumed that you have a running LaTeX installation together with the beamer package and its dependencies.
-
-Ad-hoc installation 
--------------------
-After downloading, you can immediately start working by editing the provided presentation.tex template.
-
-Global installation
--------------------
-Once you have the files, all that is required for the theme to work is putting the files into a directory where LaTeX can find them. This boils down to mimicking the so called TDS (or TeX Directory Structure).
-
-In case you're using your favorite flavor of Unix (and/or TeX Live) you need to have a local directory (this will probably be ~/texmf/) and you need to place all the files from the theme folder in the directory ~/texmf/tex/latex/beamer/themes/ugent/, finishing it by running texhash.
-
-If on the other hand you're on Windows (probably MiK\TeX) the walkthrough at [this url](http://docs.miktex.org/manual/localadditions.html) explains in detail how to create a local installation. Don't forget to Refresh FNDB as explained [here](http://docs.miktex.org/manual/configuring.html#fndbupdate).
-
-Usage
-=====
-
-Theme options
--------------
 The theme options can be set as follows:
 `\usetheme[optionshere]{ugent}`
 
@@ -71,19 +40,31 @@ The theme options can be set as follows:
 * `noframenumber`
   * This option suppresses the frame numbers
   
-Frame macros
-------------
+### Frame macros
+
 Some frames can be generated automatically:
 * `\logoframe`: a white frame with large UGent logo
 * `\titleframe`: the title frame
 * `\sectionframe`: frame that shows the current section
 
-License
-=======
+## License
+
 This software is released under the [GNU GPL v3.0 License](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
-Contact
-=======
+## Contact
+
 If you are enjoying this theme please share it with your colleagues or friends!
 
 Any suggestions, comments, criticism or appreciation are welcome!
+
+## Demo
+
+Some example slides:
+
+![](media/screenshots/screenshot-0.png)
+![](media/screenshots/screenshot-1.png)
+![](media/screenshots/screenshot-2.png)
+![](media/screenshots/screenshot-3.png)
+![](media/screenshots/screenshot-4.png)
+![](media/screenshots/screenshot-5.png)
+![](media/screenshots/screenshot-6.png)
