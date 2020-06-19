@@ -47,19 +47,11 @@ Some frames can be generated automatically:
 * `\titleframe`: the title frame
 * `\sectionframe`: frame that shows the current section
 
-## License
-
-This software is released under the [GNU GPL v3.0 License](https://www.gnu.org/licenses/gpl-3.0.en.html).
-
 ## Contact
 
-If you are enjoying this theme please share it with your colleagues or friends!
+Having trouble using this style? Did you find a bug? Would you like a new feature in this style? Please submit a Github Issue. 
 
-Any suggestions, comments, criticism or appreciation are welcome!
-
-## Demo
-
-Some example slides:
+## Example slides
 
 ![](media/screenshots/screenshot-0.png)
 ![](media/screenshots/screenshot-1.png)
