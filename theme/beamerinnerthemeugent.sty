@@ -28,7 +28,7 @@
     \frame{
         \begin{tikzpicture}
             \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-            \node[anchor=north west,inner sep=0mm] at (.185*\the\paperwidth,.765*\the\paperheight) {\includegraphics[height=.55\textheight]{ugent-\beamer@languagevalue.png}};
+            \node[anchor=north west,inner sep=0mm] at (.185*\the\paperwidth,.765*\the\paperheight) {\includegraphics[height=.55\textheight]{ugent-\beamer@languagevalue}};
         \end{tikzpicture}
     }
     \inlogoframefalse
@@ -50,14 +50,14 @@
     \ifintitleframe
         \ifbeamer@faculty
             \fill[color=ugentblue] (.05*\the\paperwidth,.2*\the\paperheight) rectangle (\the\paperwidth,.85*\the\paperheight);
-            \node[anchor=north west,inner sep=0mm] at (.05*\the\paperwidth,.95*\the\paperheight) {\includegraphics[height=.075\textheight]{\beamer@facultyvalue-\beamer@languagevalue.png}};
+            \node[anchor=north west,inner sep=0mm] at (.05*\the\paperwidth,.95*\the\paperheight) {\includegraphics[height=.075\textheight]{\beamer@facultyvalue-\beamer@languagevalue}};
         \else
             \fill[color=ugentblue] (.05*\the\paperwidth,.2*\the\paperheight) rectangle (\the\paperwidth,\the\paperheight);
         \fi
-        \node[anchor=south west,inner sep=0mm] (ugent) at (.05*\the\paperwidth,.025*\the\paperheight) {\includegraphics[height=.15\textheight]{ugent-\beamer@languagevalue.png}};
+        \node[anchor=south west,inner sep=0mm] (ugent) at (.05*\the\paperwidth,.025*\the\paperheight) {\includegraphics[height=.15\textheight]{ugent-\beamer@languagevalue}};
     \else\ifinsectionframe
         \fill[color=ugentblue] (.05*\the\paperwidth,.2*\the\paperheight) rectangle (\the\paperwidth,\the\paperheight);
-        \node[anchor=south west,inner sep=0mm] at (.05*\the\paperwidth,.025*\the\paperheight) {\includegraphics[height=.15\textheight]{ugent-\beamer@languagevalue.png}};
+        \node[anchor=south west,inner sep=0mm] at (.05*\the\paperwidth,.025*\the\paperheight) {\includegraphics[height=.15\textheight]{ugent-\beamer@languagevalue}};
     \fi\fi
     \end{tikzpicture}
 }
