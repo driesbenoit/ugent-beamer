@@ -17,7 +17,7 @@ jobs:
         conda install -y -c conda-forge tectonic
     - name: Typeset presentation
       run: |
-        tectonic presentation.tex
+        tectonic presentation.tex --print
     - name: Archive presentation.pdf
       uses: actions/upload-artifact@v1
       with:
