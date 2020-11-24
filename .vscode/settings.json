@@ -1,0 +1,75 @@
+{
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk_xe",
+            "tools": [
+                "latexmk_xe"
+            ]
+        },
+        {
+            "name": "xelatex -> biber -> xelatex*2",
+            "tools": [
+                "xelatex",
+                "biber",
+                "xelatex",
+                "xelatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk_xe",
+            "command": "latexmk",
+            "args": [
+                "--shell-escape",
+                "-xelatex",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "files.exclude": {
+        "master-blx.bib": true,
+        "*.aux": true,
+        "*.bbl": true,
+        "*.bcf": true,
+        "*.blg": true,
+        "*.fdb_latexmk": true,
+        "*.fls": true,
+        "*.log": true,
+        "*.out": true,
+        "*.run.xml": true,
+        "*.synctex.gz": true,
+        "*.toc": true,
+        "*.xdv": true, 
+        "*.idx": true,
+        "*.ilg": true,
+        "*.ind": true
+    },
+    "ltex.workspaceFolderDictionary": {
+        "en-US": [
+            "Eq",
+            "wavefunction"
+        ]
+    }
+
+}
