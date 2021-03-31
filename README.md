@@ -9,6 +9,8 @@ Requires the packages [sfmath](https://ctan.org/pkg/sfmath),
 [helvet](https://ctan.org/pkg/helvet) and [PGF/TikZ](https://ctan.org/pkg/pgf)
 to be installed in your LaTeX distribution.
 
+Also available as [Overleaf template](https://www.overleaf.com/latex/templates/ugent-beamer/ywtkkxstfgmx).
+
 Demo
 ----
 An extended example is available. See `example/example.tex` and `example/example.pdf` or click [here](https://github.com/driesbenoit/ugent-beamer/blob/master/example/example.pdf).
