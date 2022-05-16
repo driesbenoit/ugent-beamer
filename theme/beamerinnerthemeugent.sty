@@ -84,7 +84,7 @@
 %\fbox{
     \hspace*{.02\textwidth}
     \begin{minipage}[t][.1\textheight][t]{.98\textwidth}
-        {\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate}
+        {\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate\par}
     \end{minipage}
 %}
 %\fbox{
@@ -92,20 +92,20 @@
         \hspace*{.02\textwidth}
         \begin{minipage}[t][.425\textheight][b]{.98\textwidth}
             \ifx\insertsubtitle\@empty%
-                {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}
+                {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
             \else%
-                {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}\\[.25cm]
-                {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle}
+                {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+                {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
             \fi
         \end{minipage}
    \else
         \hspace*{.02\textwidth}
         \begin{minipage}[t][.6\textheight][b]{.98\textwidth}
             \ifx\insertsubtitle\@empty%
-                {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}
+                {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
             \else%
-                {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}\\[.25cm]
-                {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle}
+                {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+                {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
             \fi
         \end{minipage}
    \fi
@@ -113,7 +113,7 @@
 %\fbox{
     \hspace*{.02\textwidth}
     \begin{minipage}[t][.1\textheight][b]{.98\textwidth}
-        {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor}
+        {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par}
     \end{minipage}
 %}
 }

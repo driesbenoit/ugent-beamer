@@ -1,12 +1,40 @@
-# Version v0.1-1
-
+# Version v0.1-2
 The aim of this UGent Beamer theme:
 * A theme that closely resembles the official UGent Powerpoint/Keynote presentation themes.
 * Similar theme options as the [depreciated UGent Beamer theme](https://github.com/pbelmans/ugent-beamer) by Pieter Belmans.
 * A corporate version, as well as faculty specific versions.
 * Ease-of-use for the average Beamer user.
 
-Requires the packages [sfmath](https://ctan.org/pkg/sfmath),[helvet](https://ctan.org/pkg/helvet), [PGF/TikZ](https://ctan.org/pkg/pgf) and [beamer](https://ctan.org/pkg/beamer) to be installed in your LaTeX distribution.
+Requires the packages [sfmath](https://ctan.org/pkg/sfmath),
+[helvet](https://ctan.org/pkg/helvet) and [PGF/TikZ](https://ctan.org/pkg/pgf)
+to be installed in your LaTeX distribution.
+
+Also available as [Overleaf template](https://www.overleaf.com/latex/templates/ugent-beamer/ywtkkxstfgmx).
+
+Demo
+----
+Some example slides:
+
+![](media/screenshots/screenshot-0.png)
+![](media/screenshots/screenshot-1.png)
+![](media/screenshots/screenshot-2.png)
+![](media/screenshots/screenshot-3.png)
+![](media/screenshots/screenshot-4.png)
+![](media/screenshots/screenshot-5.png)
+![](media/screenshots/screenshot-6.png)
+
+
+Download
+========
+Download the latest release by following [this](https://github.com/driesbenoit/ugent-beamer/releases) link.
+
+Installation
+============
+The theme is an addendum for the LaTeX beamer class, hence it is assumed that you have a running LaTeX installation together with the beamer package and its dependencies.
+
+Ad-hoc installation 
+-------------------
+After downloading, you can immediately start working by editing the provided presentation.tex template.
 
 ## Usage
 
