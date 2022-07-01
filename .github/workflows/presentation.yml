@@ -1,0 +1,26 @@
+name: Typeset presentation
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up Git repository
+      uses: actions/checkout@v2
+    - name: Compile LaTeX document
+      uses: gqcg-oss/latex-action@master
+      with:
+        root_file: presentation.tex
+        latexmk_use_xelatex: true
+    - name: Archive presentation.pdf
+      uses: actions/upload-artifact@v2
+      with:
+        name: presentation.pdf
+        path: presentation.pdf
+        retention-days: 7
+        
