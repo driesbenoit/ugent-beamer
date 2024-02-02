@@ -55,9 +55,15 @@
             \fill[color=ugentblue] (.05*\the\paperwidth,.2*\the\paperheight) rectangle (\the\paperwidth,\the\paperheight);
         \fi
         \node[anchor=south west,inner sep=0mm] (ugent) at (.05*\the\paperwidth,.025*\the\paperheight) {\includegraphics[height=.15\textheight]{ugent-\beamer@languagevalue.png}};
+        \ifbeamer@fmake
+	        \node[anchor=south west,inner sep=0mm] (fmake) at (.15*\the\paperwidth,.005*\the\paperheight) {\includegraphics[height=.15\textheight]{fmake.png}};
+	    \fi
     \else\ifinsectionframe
         \fill[color=ugentblue] (.05*\the\paperwidth,.2*\the\paperheight) rectangle (\the\paperwidth,\the\paperheight);
         \node[anchor=south west,inner sep=0mm] at (.05*\the\paperwidth,.025*\the\paperheight) {\includegraphics[height=.15\textheight]{ugent-\beamer@languagevalue.png}};
+        \ifbeamer@fmake
+	        \node[anchor=south west,inner sep=0mm] at (.15*\the\paperwidth,.005*\the\paperheight) {\includegraphics[height=.15\textheight]{fmake.png}};
+	    \fi
     \fi\fi
     \end{tikzpicture}
 }
