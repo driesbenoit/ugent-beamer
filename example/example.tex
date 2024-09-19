@@ -139,13 +139,14 @@
         \item The main colors of the presentation are ugentblue, black and white.
         \item The secondary color should only be used exceptionally.
         \item The theme defines a special color \texttt{ugent-alert}.
-        \item This color is \emph{or} {\color{ugentyellow}ugentyellow} \emph{or} the faculty color.
-        \item The special color \texttt{ugent-alert} equals the faculty color:
+        \item The special color \texttt{ugent-alert} equals:
             \begin{itemize}
-                \item \textbf{if} the faculty specific template is used
-                \item \textbf{and if} the option \texttt{usecolors} is set 
+                \itemsep.15cm
+                \item the faculty color \textbf{if} a faculty specific template is used (e.g. \texttt{faculty=eb})
+                \item  {\color{ugentyellow}ugentyellow} \textbf{if} the corporate theme is used (i.e. the \texttt{faculty} option is not set)
+                \item the value of the \texttt{seccolor} theme option \textbf{if} it is set (e.g. \texttt{seccolor=ugent-pp})
             \end{itemize}
-        \item In all other cases \texttt{ugent-alert} is {\color{ugentyellow}ugentyellow}
+        \item Note: {\color{ugentyellow}ugentyellow} does not really stand out on a white background, so it makes sense to override its use as secondary color by setting \texttt{seccolor}.
     \end{itemize}
 \end{frame}
 
