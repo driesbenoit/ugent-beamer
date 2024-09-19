@@ -48,11 +48,23 @@
     More about colors follows later.
 \end{frame}
 
-\begin{frame}
+\begin{frame}[fragile]
     \frametitle{The frame title is rendered in Small Caps}
-    The official UGent Powerpoint/Keynote templates have all titles in both ALL CAPS, \textbf{bold} and \underline{underline}.\\[.5cm]
-    In my opinion, this combination is somewhat \underline{\textbf{AGGRESSIVE AND UNPLEASANT TO THE EYE}}.\\[.5cm]
-    Instead, this theme makes use of \textsc{Small Caps} for all titles and subtitles
+    \begin{itemize}
+        \itemsep.5cm
+        \item The official UGent Powerpoint/Keynote templates have all titles in both ALL CAPS, \textbf{bold} and \underline{underline}.\\[.5cm]
+        \item In my opinion, this combination is somewhat \underline{\textbf{AGGRESSIVE AND UNPLEASANT TO THE EYE}}.
+        \item Instead, this theme makes use of \textsc{Small Caps} for all titles and subtitles.
+        \item If one insists on strictly following the UGent styleguide, it is always possible to type the titles in ALL-CAPS surrounded by an underline:
+            \begin{itemize}
+                \itemsep.25cm
+                \item E.g., \verb|\frametitle{\underline{MY UGENT TITLE}}|
+                \item For the main title, the following syntax would be necessary to avoid a pdfstring warning:\\
+                    \verb|\title{\texorpdfstring{\underline{MY TITLE}}{MY TITLE}}|
+            \end{itemize}
+            
+    \end{itemize}
+    
 \end{frame}
 
 
