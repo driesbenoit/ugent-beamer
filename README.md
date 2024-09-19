@@ -13,7 +13,7 @@ Also available as [Overleaf template](https://www.overleaf.com/latex/templates/u
 
 Demo
 ----
-An extended example is available. See `example/example.tex` and `example/example.pdf` or click [here](https://github.com/driesbenoit/ugent-beamer/blob/master/example/example.pdf).
+An extended example is available. See `example/example.tex` and `example-minimal/example-minimal.pdf` or click [here](https://github.com/driesbenoit/ugent-beamer/blob/master/example/example.pdf).
 
 Some example slides:
 
@@ -57,6 +57,8 @@ If on the other hand you're on Windows (probably MiK\TeX) the walkthrough at [th
 Usage
 =====
 Refer to the extended example (`example/example.tex`) for an overview of the possibilities of the theme.
+Also, some design choices are motivated in the extended example.
+The minimal example is intended as a template or starting point for new users.
 
 Theme options
 -------------
