@@ -6,8 +6,21 @@
 \newcommand\beamer@facultyvalue{}
 \DeclareOptionBeamer{faculty}{\beamer@facultytrue\renewcommand\beamer@facultyvalue{#1}}
 
-\newif\ifbeamer@usefacultycolors\beamer@usefacultycolorsfalse
-\DeclareOptionBeamer{usecolors}{\beamer@usefacultycolorstrue}
+\newif\ifbeamer@logoa\beamer@logoafalse
+\newcommand\beamer@logoavalue{}
+\DeclareOptionBeamer{logoa}{\beamer@logoatrue\renewcommand\beamer@logoavalue{#1}}
+
+\newif\ifbeamer@logob\beamer@logobfalse
+\newcommand\beamer@logobvalue{}
+\DeclareOptionBeamer{logob}{\beamer@logobtrue\renewcommand\beamer@logobvalue{#1}}
+
+\newif\ifbeamer@logoc\beamer@logocfalse
+\newcommand\beamer@logocvalue{}
+\DeclareOptionBeamer{logoc}{\beamer@logoctrue\renewcommand\beamer@logocvalue{#1}}
+
+\newif\ifbeamer@seccolor\beamer@seccolorfalse
+\newcommand\beamer@seccolorvalue{}
+\DeclareOptionBeamer{seccolor}{\beamer@seccolortrue\renewcommand\beamer@seccolorvalue{#1}}
 
 \newif\ifbeamer@noframenumber\beamer@noframenumberfalse
 \DeclareOptionBeamer{noframenumber}{\beamer@noframenumbertrue}
@@ -22,5 +35,19 @@
 \useoutertheme{ugent}
 \usecolortheme{ugent}
 \usefonttheme{ugent}
+
+% Custom environment for the closing frame
+\newenvironment{closingframe}
+{
+    \intitleframetrue % Set title frame true
+    \begin{frame}[plain]
+      % Set colors for itemize/enumerate
+      \setbeamercolor{itemize/enumerate body}{fg=ugentwhite}
+      \setbeamercolor{itemize/enumerate subbody}{fg=ugentwhite}
+  }
+  {
+    \end{frame}
+    \intitleframefalse % Set title frame false
+  }
 
 \mode<all>

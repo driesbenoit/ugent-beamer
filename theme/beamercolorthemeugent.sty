@@ -11,9 +11,10 @@
 \setbeamercolor{frame number in foot}{fg = ugentblue}%
 \setbeamercolor{subtitle}            {fg = ugentwhite}%
 \setbeamercolor{title}               {fg = ugentwhite}%
-\setbeamercolor{title page header}   {fg = ugentwhite,bg = ugentwhite}%
-\setbeamercolor{author}              {fg = ugentyellow,bg = ugentblue}%
-\setbeamercolor{date}                {fg = ugentwhite,bg = ugentblue}%
+\setbeamercolor{title page header}   {fg = ugentwhite}%
+\setbeamercolor{author}              {fg = ugentyellow}%
+\setbeamercolor{date}                {fg = ugentwhite}%
+\setbeamercolor{institution}         {fg = ugentwhite}%
 
 \setbeamercolor{item}                {fg=ugentblue}
 \setbeamercolor{section in toc}      {fg=ugentblue}
@@ -22,15 +23,15 @@
 \setbeamercolor{block body}          {fg=ugentblack,bg=ugentblue!15}
 \setbeamercolor{frame number in head/foot}{fg=ugentblue}
 
-% The alert color depends on the faculty
-\ifbeamer@faculty
-    \ifbeamer@usefacultycolors
+% The alert color depends on the faculty and/or the value of seccolor
+\ifbeamer@seccolor
+    \colorlet{ugent-alert}{\beamer@seccolorvalue}
+\else
+    \ifbeamer@faculty
         \colorlet{ugent-alert}{ugent-\beamer@facultyvalue}
     \else
         \colorlet{ugent-alert}{ugentyellow}
     \fi
-\else
-    \colorlet{ugent-alert}{ugentyellow}
 \fi
 
 \setbeamercolor{alerted text}        {fg=ugent-alert}

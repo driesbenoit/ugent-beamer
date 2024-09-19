@@ -4,11 +4,11 @@
     \ifintitleframe\else%
     \ifinsectionframe\else%
         \hfill
-        \begin{beamercolorbox}[wd=1.5cm,right,ht=1cm]{frame number in head/foot}
+        \begin{beamercolorbox}[wd=\textwidth,right,ht=.1\gridunit]{frame number in head/foot}
             \usebeamerfont{frame number in head/foot}%
             \usebeamercolor[fg]{frame number in head/foot}%
             \ifbeamer@noframenumber\else%
-                \hfill\insertframenumber\,/\,\inserttotalframenumber\kern1em\vspace*{4mm}%
+                \hfill\insertframenumber\,/\,\inserttotalframenumber\kern1em\vspace*{.5\gridunit}%
             \fi
         \end{beamercolorbox}
   \fi\fi\fi%
