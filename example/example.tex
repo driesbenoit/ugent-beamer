@@ -4,13 +4,13 @@
 
 % Metadata of the presentation
 \title{UGent beamer theme}
-\subtitle{Some optional subtitle}
+%\subtitle{Some optional subtitle}
 \subtitle{Powered by \LaTeX}
 \date[ISBT 2018]{27th International Symposium of Beamer Themes}
 \author[DB]{Dries Benoit --- \texttt{dries.benoit@ugent.be}}
 
 % Load the UGent theme
-\usetheme[language=en,faculty=eb,usecolors]{ugent}
+\usetheme[language=en,faculty=we]{ugent}
 
 % Have this if you'd like section slides 
 \AtBeginSection[]{
@@ -51,16 +51,16 @@
 \begin{frame}[fragile]
     \frametitle{The frame title is rendered in Small Caps}
     \begin{itemize}
-        \itemsep.5cm
+        \itemsep.25cm
         \item The official UGent Powerpoint/Keynote templates have all titles in both ALL CAPS, \textbf{bold} and \underline{underline}.\\[.5cm]
         \item In my opinion, this combination is somewhat \underline{\textbf{AGGRESSIVE AND UNPLEASANT TO THE EYE}}.
-        \item Instead, this theme makes use of \textsc{Small Caps} for all titles and subtitles.
-        \item If one insists on strictly following the UGent styleguide, it is always possible to type the titles in ALL-CAPS surrounded by an underline:
+        \item Instead, the default of this theme is to display all titles and subtitles in \textsc{Small Caps} .
+        \item As of version v1.1 of this theme, a theme option is added \texttt{ugentstrict} that will display all titles in \textsc{small caps} and \underline{underlined}: \underline{\MakeLowercase{\textsc{like this}}}
             \begin{itemize}
                 \itemsep.25cm
-                \item E.g., \verb|\frametitle{\underline{MY UGENT TITLE}}|
-                \item For the main title, the following syntax would be necessary to avoid a pdfstring warning:\\
-                    \verb|\title{\texorpdfstring{\underline{MY TITLE}}{MY TITLE}}|
+                \item Capitalisation of the input title is ignored via \verb|\MakeLowercase|
+                \item This will not work for multi-line titles as \verb|\underline| does not allow for line breaks!
+                \item The minimal example showcases this theme option.
             \end{itemize}
             
     \end{itemize}
@@ -200,7 +200,7 @@
     \begin{itemize}
         \itemsep.25cm
         \item By default frame numbers are places on every ``regular'' frame.
-        \item That excludes logoframes, titleframes and sectionframes.
+        \item That excludes logoframes, titleframes, sectionframes and closingframes.
         \item The frame number is always followed by the total number of frames.
         \item The theme option \texttt{noframenumber} removes frame numbers on all slides.
     \end{itemize}

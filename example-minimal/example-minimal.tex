@@ -9,7 +9,7 @@
 \author{Joe Sixpack --- \texttt{joe.sixpack@ugent.be}}
 
 % Load the UGent theme
-\usetheme[language=en,faculty=ea,logoa=fwo]{ugent}
+\usetheme[language=en,faculty=ea,logoa=fwo,ugentstrict]{ugent}
 
 % Have this if you'd like section slides 
 \AtBeginSection[]{
@@ -20,10 +20,18 @@
 
 % Have this if you'd like the presentation to start 
 % with a large UGent logo
-\logoframe
+%\logoframe
 
 % I guess you always want a titleframe
 \titleframe
+
+% Have this if you'd like a frame containing the 
+% table of content
+\begin{frame}{Overview}
+    \tableofcontents[hideallsubsections]
+\end{frame}
+
+
 
 % Start of the first section
 \section{The first section}
