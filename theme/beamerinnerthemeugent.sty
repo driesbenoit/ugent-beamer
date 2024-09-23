@@ -131,13 +131,25 @@
     % Place the third node \gridunit above the author node
     \ifx\inserttitle\@empty\else%
     \ifx\insertsubtitle\@empty%
+    \ifbeamer@ugentstrict
+      \node[anchor=south west, text width=\the\paperwidth-2\gridunit]%
+        at ([yshift=1\gridunit]author.north west)[font=\linespread{2.0}\selectfont]{%
+            \usebeamerfont{title}\usebeamercolor[fg]{title}\texorpdfstring{\underline{\MakeLowercase{\inserttitle}}}{\inserttitle}};%
+    \else%
       \node[anchor=south west, text width=\the\paperwidth-2\gridunit]%
         at ([yshift=1\gridunit]author.north west)[font=\linespread{2.0}\selectfont]{%
             \usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle};%
+    \fi
+    \else%
+    \ifbeamer@ugentstrict
+      \node[anchor=south west, text width=\the\paperwidth-2\gridunit]%
+        at ([yshift=0.5\gridunit]subtitle.north west)[font=\linespread{2.0}\selectfont]{%
+            \usebeamerfont{title}\usebeamercolor[fg]{title}\texorpdfstring{\underline{\MakeLowercase{\inserttitle}}}{\inserttitle}};%
     \else%
       \node[anchor=south west, text width=\the\paperwidth-2\gridunit]%
         at ([yshift=.5\gridunit]subtitle.north west)[font=\linespread{2.0}\selectfont]{%
             \usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle};%
+    \fi%
     \fi%
     \fi%
   \end{tikzpicture}%
@@ -149,9 +161,15 @@
     % Define the bounding box for the entire slide
     \useasboundingbox (0,0) rectangle (\the\paperwidth,\the\paperheight);%
 
-    \node[anchor=south west, text width=\the\paperwidth-2\gridunit]%
-      at ([xshift=1.5\gridunit,yshift=5\gridunit]current page.south west) {%
-          \usebeamerfont{title}\usebeamercolor[fg]{title}\insertsectionhead};%
+    \ifbeamer@ugentstrict
+        \node[anchor=south west, text width=\the\paperwidth-2\gridunit]%
+          at ([xshift=1.5\gridunit,yshift=5\gridunit]current page.south west) {%
+              \usebeamerfont{title}\usebeamercolor[fg]{title}\underline{\MakeLowercase{\insertsectionhead}}};%
+    \else%
+        \node[anchor=south west, text width=\the\paperwidth-2\gridunit]%
+          at ([xshift=1.5\gridunit,yshift=5\gridunit]current page.south west) {%
+              \usebeamerfont{title}\usebeamercolor[fg]{title}\insertsectionhead};%
+    \fi%
   \end{tikzpicture}%
 }
     
@@ -160,10 +178,19 @@
     \begin{beamercolorbox}[wd=\paperwidth,leftskip=\gridunit]{frametitle}
     \vskip.25\gridunit
     \ifx\insertframesubtitle\@empty%
-        {\usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}\insertframetitle}%
+        \ifbeamer@ugentstrict
+            {\usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}\underline{\MakeLowercase{\insertframetitle}}}
+        \else%
+            {\usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}\insertframetitle}%
+        \fi%
     \else%
-        {\usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}\insertframetitle}\\[-.25\gridunit]
-        {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}%
+        \ifbeamer@ugentstrict
+            {\usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}\underline{\MakeLowercase{\insertframetitle}}}\\[-.25\gridunit]
+            {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}%
+        \else%
+            {\usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}\insertframetitle}\\[-.25\gridunit]
+            {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}%
+        \fi%
     \fi
     \end{beamercolorbox}
 }
