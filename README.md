@@ -15,14 +15,14 @@ An extended example is available. See `example/example.tex` and `example-minimal
 
 Some example slides:
 
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-0.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-1.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-2.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-3.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-4.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-5.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-6.png)
-![](https://github.com/driesbenoit/ugent-beamer/blob/master/example-screenshots/screenshot-7.png)
+![](https://raw.github.com/driesbenoit/ugent-beamer/master/example-screenshots/screenshot-0.png)
+![](https://raw.github.com/driesbenoit/ugent-beamer/master/example-screenshots/screenshot-1.png)
+![](https://raw.github.com/driesbenoit/ugent-beamer/master/example-screenshots/screenshot-2.png)
+![](https://raw.github.com/driesbenoit/ugent-beamer/master/example-screenshots/screenshot-3.png)
+![](https://raw.github.com/driesbenoit/ugent-beamer/master/example-screenshots/screenshot-4.png)
+![](https://raw.github.com/driesbenoit/ugent-beamer/master/example-screenshots/screenshot-5.png)
+![](https://raw.github.com/driesbenoit/ugent-beamer/master/example-screenshots/screenshot-6.png)
+![](https://raw.github.com/driesbenoit/ugent-beamer/master/example-screenshots/screenshot-7.png)
 
 # Download
 Download the latest release by following [this](https://github.com/driesbenoit/ugent-beamer/releases) link.
@@ -60,7 +60,7 @@ The theme options can be set as follows:
 * `language=x`, where x is the language
   * `nl`: Dutch (default)
   * `en`: English
-* `faculty=x`, where x is the abbreviation of the faculty
+* `faculty=x`, where x is the abbreviation of the faculty. Omit option to use the corporate layout. 
   * `lw`: Faculty of Literature & Philosophy
   * `re`: Faculty of Law
   * `we`: Faculty of Science
